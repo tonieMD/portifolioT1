@@ -72,18 +72,15 @@ const HeroButton = styled.a`
 `;
 
 const HeroSection = () => {
-  const handleLearnMoreClick = (e) => {
-    e.preventDefault();
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <HeroContainer id="hero">
       <HeroContent>
-        <HeroTitle>Welcome to My Journey</HeroTitle>
-        <HeroSubtitle>Discover my ikigai and explore my professional path</HeroSubtitle>
-        <HeroButton href="#about" onClick={handleLearnMoreClick}>
-          Learn More
+        <HeroTitle>Hey, I'm Rashid!</HeroTitle>
+        <HeroSubtitle>
+          Welcome to my personal space where I share my journey in healthcare and tech. Dive into my stories, insights, and passions.
+        </HeroSubtitle>
+        <HeroButton href="https://yourblog.com" target="_blank" rel="noopener noreferrer">
+          Check Out My Blog
         </HeroButton>
       </HeroContent>
     </HeroContainer>
@@ -91,5 +88,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
 
 
