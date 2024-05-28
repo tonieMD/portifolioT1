@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const AboutContainer = styled.section`
   padding: 4rem 2rem;
-  background-color: #1e1e1e;
-  color: #f5f5f5;
+  background-color: #1c1c1c;
+  color: #fff;
   text-align: center;
 `;
 
@@ -13,7 +13,7 @@ const AboutTitle = styled.h2`
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #f5f5f5;
+  color: #f0f0f0;
   position: relative;
   display: inline-block;
 
@@ -21,7 +21,7 @@ const AboutTitle = styled.h2`
     content: '';
     width: 50%;
     height: 2px;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     display: block;
     margin: 0.5rem auto 0;
   }
@@ -45,8 +45,8 @@ const ImageWrapper = styled.div`
   margin-bottom: 2rem;
   border-radius: 50%;
   overflow: hidden;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   @media (min-width: 768px) {
@@ -64,7 +64,7 @@ const ProfileImage = styled.img`
 const Description = styled.div`
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.2rem;
-  color: #d3d3d3;
+  color: #d1d1d1;
   line-height: 1.6;
   max-width: 600px;
 `;
@@ -74,7 +74,7 @@ const AboutSection = () => (
     <AboutTitle>About Me</AboutTitle>
     <ContentWrapper>
       <ImageWrapper>
-      <ProfileImage src={`${process.env.PUBLIC_URL}/profileImage.jpg`} alt="Rashid Mbuma" />
+        <ProfileImage src={`${process.env.PUBLIC_URL}/profileimage.jpg`} alt="Rashid Mbuma" />
       </ImageWrapper>
       <Description>
         <p>Hey there! I'm Rashid Mbuma, and I'm excited to share a bit about myself with you. I'm a Medical Doctor with a big heart for pediatric care. After graduating from Muhimbili University of Health and Allied Sciences in 2022, I dove right into my role as a General Practitioner at Care Plus Hospital in Dar es Salaam, where I get to focus on helping kids stay healthy.</p>
@@ -86,6 +86,7 @@ const AboutSection = () => (
 );
 
 export default AboutSection;
+
 
 
 
