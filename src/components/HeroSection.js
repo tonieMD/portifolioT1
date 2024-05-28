@@ -79,7 +79,7 @@ const HeroSection = () => {
         <HeroSubtitle>
           Welcome to my personal space where I share my journey in healthcare and tech. Dive into my stories, insights, and passions.
         </HeroSubtitle>
-        <HeroButton href="https://yourblog.com" target="_blank" rel="noopener noreferrer">
+        <HeroButton href="https://medium.com/@rashtonyhag" target="_blank" rel="noopener noreferrer">
           Check Out My Blog
         </HeroButton>
       </HeroContent>
