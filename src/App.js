@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import styled from 'styled-components';
+import Nav from './components/Nav';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import JourneySection from './components/JourneySection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactForm from './components/ContactForm';
+
+const AppContainer = styled.div`
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <Nav />
+      <HeroSection />
+      <AboutSection />
+      <JourneySection />
+      <ProjectsSection />
+      <ContactForm />
+    </AppContainer>
   );
 }
 
